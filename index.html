@@ -56,6 +56,7 @@
       z-index: 10;
     }
     #title-overlay {
+      --title-size: clamp(1.5rem, 4.5vw, 2.8rem);
       position: absolute;
       inset: 0;
       display: flex;
@@ -81,14 +82,14 @@
       opacity: 0.22;
       color: #8B2500;
       text-shadow: 0 0 40px rgba(245, 222, 179, 0.4);
-      font-size: clamp(1.5rem, 4.5vw, 2.8rem);
+      font-size: var(--title-size);
       width: 88%;
       max-width: 88%;
       margin: 0 auto;
     }
     #title-overlay .subtitle-text {
       font-family: 'Rye', serif;
-      font-size: clamp(1.275rem, 3.825vw, 2.38rem);
+      font-size: calc(var(--title-size) * 0.85);
       letter-spacing: 0.03em;
       opacity: 0.2;
       color: #B8860B;
